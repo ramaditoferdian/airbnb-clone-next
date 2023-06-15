@@ -5,7 +5,7 @@ import { BiDollar } from "react-icons/bi";
 
 interface InputProps {
   id: string;
-  label?: string;
+  label: string;
   type?: string;
   disabled?: boolean;
   formatPrice?: boolean;
@@ -17,7 +17,7 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({
   id,
   label,
-  type,
+  type = "text",
   disabled,
   formatPrice,
   required,
